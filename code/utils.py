@@ -3,6 +3,11 @@ import random
 import numpy as np
 from sklearn.metrics import cohen_kappa_score
 
+def create_tmp_dirs(tmp_dirs):
+	for tmp_dir in tmp_dirs:
+		if not os.path.isdir(tmp_dir):
+			os.mkdir(tmp_dir) 
+
 def kappa_metric(y_true, y_pred, n_cl = 4):
 	# computes Cohen kappa per class
 	y =  np.array(y_true) 
