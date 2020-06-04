@@ -44,6 +44,8 @@ half_prec = 0.5
 prec = 1
 n_cl = 4
 
+img_dir = './tSNE_val/'
+
 import sys
 sys.path.append("..")
 from loadData import  *
@@ -52,6 +54,7 @@ from utils import *
 data_dir = './../../data/files/'
 f_set = './../../data/file_sets.mat'
 
+create_tmp_dirs([img_dir])
 
 mat = spio.loadmat(f_set)
 	
@@ -204,4 +207,4 @@ for j in range(len(f_list)):
 
 	plt.figure(figsize=(8, 8))
 	plt.scatter(x = emb_2d[:,0], y=emb_2d[:,1], color=emb_color, s=p_s)
-	plt.savefig('./tSNE_val/'+f+'.png')
+	plt.savefig(img_dir+f+'.png')
