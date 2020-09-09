@@ -3,7 +3,7 @@
 This repository contains the code we used in our paper "Automatic Microsleep Detection with Deep Learning".
 
 Please cite our paper:
-
+https://arxiv.org/abs/2009.03027
 "Automatic detection of microsleep episodes with deep learning"
 Alexander Malafeev, Anneke Hertig-Godeschalk, David R. Schreier, Jelena Skorucak, Johannes Mathis, Peter Achermann
 
