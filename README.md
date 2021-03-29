@@ -3,8 +3,9 @@
 This repository contains the code we used in our paper "Automatic Microsleep Detection with Deep Learning".
 
 Citation:
+Malafeev A, Hertig-Godeschalk A,Schreier DR, Skorucak J, Mathis Jand Achermann P (2021) Automatic Detection of Microsleep Episodes With Deep Learning. Front. Neurosci. 15:564098.doi: 10.3389/fnins.2021.564098
 
-https://arxiv.org/abs/2009.03027
+https://www.frontiersin.org/articles/10.3389/fnins.2021.564098/full
 
 "Automatic detection of microsleep episodes with deep learning"
 Alexander Malafeev, Anneke Hertig-Godeschalk, David R. Schreier, Jelena Skorucak, Johannes Mathis, Peter Achermann
