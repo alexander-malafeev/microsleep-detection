@@ -46,6 +46,8 @@ out_dir = './pred/'
 data_dir = './../../data/files/'
 f_set = './../../data/file_sets.mat'
 
+create_tmp_dirs([out_dir,  out_dir+'/test/'])
+
 files_val = []
 files_test = []
 files_train = []

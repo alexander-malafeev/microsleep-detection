@@ -46,7 +46,7 @@ from utils import *
 data_dir = '../data/'
 out_dir = './pred/'
 
-
+create_tmp_dirs([out_dir])
 
 
 files = [f for f in listdir(data_dir) if isfile(join(data_dir, f))]

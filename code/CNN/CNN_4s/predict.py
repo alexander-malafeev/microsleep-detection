@@ -45,7 +45,7 @@ from utils import *
 data_dir = '../data/'
 out_dir = './pred/'
 
-
+create_tmp_dirs([out_dir])
 
 
 
