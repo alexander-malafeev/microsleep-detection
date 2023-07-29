@@ -201,9 +201,9 @@ f_list = files_val
 for j in range(0,len(f_list)):
 	f = f_list[j]
 	generator_val = my_generator(data_val, targets_val, sample_list_val[j], shuffle = False)
-	scores = model.evaluate_generator( generator_val, int(math.ceil((len(sample_list_val[j],)+0.0)/batch_size)), workers=1)
+	scores = Model.evaluate( generator_val, int(math.ceil((len(sample_list_val[j],)+0.0)/batch_size)), workers=1)
 	generator_val = my_generator(data_val, targets_val, sample_list_val[j], shuffle = False)
-	y_pred = model.predict_generator( generator_val, int(math.ceil((len(sample_list_val[j],)+0.0)/batch_size)), workers=1)
+	y_pred = Model.predict( generator_val, int(math.ceil((len(sample_list_val[j],)+0.0)/batch_size)), workers=1)
 	print(y_pred.shape)
 	
 	y_ = np.argmax(y_pred, axis=1).flatten() 
@@ -212,9 +212,9 @@ for j in range(0,len(f_list)):
 	
 	
 	generator_val = my_generator(data_val, targets_val, sample_list_val2[j], shuffle = False)
-	scores2 = model.evaluate_generator( generator_val, int(math.ceil((len(sample_list_val2[j],)+0.0)/batch_size)), workers=1)
+	scores2 = Model.evaluate( generator_val, int(math.ceil((len(sample_list_val2[j],)+0.0)/batch_size)), workers=1)
 	generator_val = my_generator(data_val, targets_val, sample_list_val2[j], shuffle = False)
-	y_pred2 = model.predict_generator( generator_val, int(math.ceil((len(sample_list_val2[j],)+0.0)/batch_size)), workers=1)
+	y_pred2 = Model.predict( generator_val, int(math.ceil((len(sample_list_val2[j],)+0.0)/batch_size)), workers=1)
 	
 	
 	O2y_ = np.argmax(y_pred, axis=1).flatten() 

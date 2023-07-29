@@ -197,9 +197,9 @@ for i in range(n_ep):
 	for j in range(len(data_val)):
 		f = f_list[j]
 		generator_val = my_generator(data_val, targets_val, sample_list_val[j], shuffle = False)
-		scores = model.evaluate_generator( generator_val, int(math.ceil((len(sample_list_val[j],)+0.0)/batch_size)), workers=1)
+		scores = Model.evaluate( generator_val, int(math.ceil((len(sample_list_val[j],)+0.0)/batch_size)), workers=1)
 		generator_val = my_generator(data_val, targets_val, sample_list_val[j], shuffle = False)
-		y_pred = model.predict_generator( generator_val, int(math.ceil((len(sample_list_val[j],)+0.0)/batch_size)), workers=1)
+		y_pred = Model.predict( generator_val, int(math.ceil((len(sample_list_val[j],)+0.0)/batch_size)), workers=1)
 		val_l.append(len(sample_list_val[j]))
 		print(len(sample_list_val[j]))
 		print(len(targets_val[j][0]))

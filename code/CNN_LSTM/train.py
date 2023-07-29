@@ -226,10 +226,10 @@ for i in range(n_ep):
 	for j in range(len(data_val)):
 		f = f_list[j]
 		generator_val = my_generator(data_val, targets_val, sample_list_val[j], shuffle = False)
-		scores = model.evaluate_generator( generator_val, 1, workers=1)
+		scores = Model.evaluate( generator_val, 1, workers=1)
 		print(scores)
 		generator_val = my_generator(data_val, targets_val, sample_list_val[j], shuffle = False)
-		y_pred = model.predict_generator( generator_val, 1, workers=1)
+		y_pred = Model.predict( generator_val, 1, workers=1)
 		val_y_tmp = []
 		generator_val = my_generator(data_val, targets_val, sample_list_val[j], shuffle = False)
 		for ii in range(int(math.ceil((len(sample_list_val[j],)+0.0)/batch_size))):
