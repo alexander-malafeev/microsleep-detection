@@ -85,8 +85,8 @@ print("Reading dataset to predict:")
 (  data_test, targets_test, N_samples_test) = load_data(data_dir,files_test, w_len)
 
 
-ordering = 'tf';
-keras.backend.common.set_image_dim_ordering(ordering)
+ordering = 'channels_last';
+keras.backend.set_image_data_format(ordering)
 
 
 

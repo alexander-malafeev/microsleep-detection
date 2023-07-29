@@ -106,8 +106,8 @@ n_channels = 3
 
 
 
-ordering = 'tf';
-keras.backend.common.set_image_dim_ordering(ordering)
+ordering = 'channels_last';
+keras.backend.set_image_data_format(ordering)
 
 
 print("Building model")

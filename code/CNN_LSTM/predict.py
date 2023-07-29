@@ -146,8 +146,8 @@ def val_data_to_batch(data, targets):
 	np.clip(batch_data, -1, 1)
 	return batch_data, batch_targets		
 			
-ordering = 'tf';
-keras.backend.common.set_image_dim_ordering(ordering)
+ordering = 'channels_last';
+keras.backend.set_image_data_format(ordering)
 
 [ model] = build_model(data_dim, n_channels, n_cl)
 

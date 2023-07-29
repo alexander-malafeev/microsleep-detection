@@ -156,8 +156,8 @@ for i in range(len(targets_val)):
 		sample_list_val[i].append([i,j,wnd_begin, wnd_end, 0 ])
 		
 			
-ordering = 'tf';
-keras.backend.common.set_image_dim_ordering(ordering)
+ordering = 'channels_last';
+keras.backend.set_image_data_format(ordering)
 
 
 

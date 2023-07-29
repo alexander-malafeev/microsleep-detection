@@ -68,8 +68,8 @@ print("Reading dataset to predict:")
 
 
 
-ordering = 'tf';
-keras.backend.common.set_image_dim_ordering(ordering)
+ordering = 'channels_last';
+keras.backend.set_image_data_format(ordering)
 
 sample_list_val = []
 for i in range(len(targets_val)):

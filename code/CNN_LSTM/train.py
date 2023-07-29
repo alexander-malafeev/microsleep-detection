@@ -179,8 +179,8 @@ for i in range(len(targets_val)):
 
 
 			
-ordering = 'tf';
-keras.backend.common.set_image_dim_ordering(ordering)
+ordering = 'channels_last';
+keras.backend.set_image_data_format(ordering)
 
 
 learning_rate = 0.1

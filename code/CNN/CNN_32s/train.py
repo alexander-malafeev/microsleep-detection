@@ -149,8 +149,8 @@ for i in range(len(targets_val)):
 		wnd_end = mid+w_len-1
 		sample_list_val[i].append([i,j,wnd_begin, wnd_end, 0 ])
 		
-ordering = 'tf';
-keras.backend.common.set_image_dim_ordering(ordering)
+ordering = 'channels_last';
+keras.backend.set_image_data_format(ordering)
 
 [cnn_eeg, model] = build_model(data_dim, n_channels, n_cl)
 Nadam = optimizers.Nadam( )
