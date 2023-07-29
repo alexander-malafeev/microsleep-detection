@@ -51,8 +51,8 @@ sys.path.append("..")
 from loadData import  *
 from utils import *
 
-data_dir = './../../data/files/'
-f_set = './../../data/file_sets.mat'
+data_dir = './../../../data/files/'
+f_set = './../../../data/file_sets.mat'
 
 create_tmp_dirs([img_dir])
 

@@ -48,8 +48,8 @@ prec = 1
 n_cl = 4
 
 
-data_dir = './../../data/files/'
-f_set = './../../data/file_sets.mat'
+data_dir = './../../../data/files/'
+f_set = './../../../data/file_sets.mat'
 
 create_tmp_dirs(['./models/',  './predictions/'])
 

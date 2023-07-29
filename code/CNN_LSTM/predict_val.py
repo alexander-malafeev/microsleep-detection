@@ -42,8 +42,8 @@ from loadData import  *
 out_dir = './pred/'
 
 
-data_dir = './../../data/files/'
-f_set = './../../data/file_sets.mat'
+data_dir = './../../../data/files/'
+f_set = './../../../data/file_sets.mat'
 
 files_val = []
 files_test = []
