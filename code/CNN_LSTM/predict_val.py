@@ -208,9 +208,9 @@ f_list = files_val
 for j in range(0,len(f_list)):
 	f = f_list[j]
 	generator_val = my_generator(data_val, targets_val, sample_list_val[j], shuffle = False)
-	scores = Model.evaluate( generator_val, 1, workers=1)
+	scores = model.evaluate_generator( generator_val, 1, workers=1)
 	generator_val = my_generator(data_val, targets_val, sample_list_val[j], shuffle = False)
-	y_pred = Model.predict( generator_val, 1, workers=1)
+	y_pred = model.predict_generator( generator_val, 1, workers=1)
 
 	val_y_tmp = []
 	generator_val = my_generator(data_val, targets_val, sample_list_val[j], shuffle = False)
